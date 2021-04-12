@@ -27,7 +27,7 @@ public class Program {
 //        Atm t6 = new Atm("F", semaphore);
 //        t6.start();
 		
-		// I stedet for at lave en variabel til hver atm, kan de også startes direkte som vist herunder.
+		// In stead of creating a variable for each atm, the threads can be started in a loop as shown below.
 		for(int i = 1; i <= 6; i++) {
 			new Atm("ATM "+ i, semaphore).start();
 		}
